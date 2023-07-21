@@ -4,170 +4,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>iframes</title>
+  <title>Railway travel in Russia</title>
   <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
   <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-  <div class="page">
-    <header class="header">
-      <div class="header__container">
-        <div class="header__title-container">
-          <h1 class="header__title">
-            Степь и тайга: самое длинное железнодорожное путешествие в мире
-          </h1>
-          <p class="header__description">
-            Пирожки с ливером, дембеля, проводницы Таня и Надя, ряженка на
-            станциях, Хабаровск, Ижевск, Москва — всего 18 дней в пути. Так
-            музыкант Дэвид Боуи добирался в Европу после тура по Японии весной
-            1973 года. Боуи боялся летать, поэтому поехал на поезде.
-          </p>
+<div class="page">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__title-container">
+        <h1 class="header__title">
+          Степь и тайга: самое длинное железнодорожное путешествие в мире
+        </h1>
+        <p class="header__description">
+          Пирожки с ливером, дембеля, проводницы Таня и Надя, ряженка на
+          станциях, Хабаровск, Ижевск, Москва — всего 18 дней в пути. Так
+          музыкант Дэвид Боуи добирался в Европу после тура по Японии весной
+          1973 года. Боуи боялся летать, поэтому поехал на поезде.
+        </p>
+      </div>
+      <div class="header__counter-container">
+        <div class="header__counter header__counter_type_km">
+          <span class="header__counter-value" id="counter-km">0</span>
+          км
         </div>
-        <div class="header__counter-container">
-          <div class="header__counter header__counter_type_km">
-            <span class="header__counter-value" id="counter-km">0</span>
-            км
-          </div>
-          <div class="header__counter header__counter_type_days">
-            <span class="header__counter-value" id="counter-days">начало путешествия</span>
-          </div>
-          <div class="header__audio-container">
-            <audio src="./audio/audio.mp3" type="audio/mp3" loop controls></audio>
-          </div>
+        <div class="header__counter header__counter_type_days">
+          <span class="header__counter-value" id="counter-days">начало путешествия</span>
+        </div>
+        <div class="header__audio-container">
+          <audio src="./audio/audio.mp3" type="audio/mp3" loop controls></audio>
         </div>
       </div>
-    </header>
-    <section class="cities">
-      <div class="cities__container">
-        <div class="cities__city" id="city-kostroma">
-          <div class="cities__video-container cities__video-container_name_kostroma">
-            <video src="./videos/1.mp4" poster="/posters/msk-kostroma.jpg" type="video/mp4" autoplay muted></video>
-          </div>
-          <p class="cities__text">
-            Сначала — привычные пейзажи европейской части России: поля, дачи,
-            деревни, лесополосы, линии электропередач. Абрамцево, Берендеево,
-            Ростов Великий, Нерехта: кажется, что едешь то ли по стране хоббитов,
-            то ли в прошлое, в 1973 год, и сейчас из соседнего купе выйдет
-            высокий нескладный человек в японском кимоно и ярких штанах.
-          </p>
+    </div>
+  </header>
+  <section class="cities">
+    <div class="cities__container">
+      <div class="cities__city" id="city-kostroma">
+        <div class="cities__video-container cities__video-container_name_kostroma">
+          <video src="./videos/1.mp4" poster="/posters/msk-kostroma.jpg" type="video/mp4" autoplay muted></video>
         </div>
-        <div class="cities__city" id="city-ekb">
-          <div class="cities__video-container cities__video-container_name_ekb">
-            <video src="./videos/2.mp4" poster="/posters/kostroma-ekb.jpg" type="video/mp4" autoplay muted></video>
-          </div>
-          <p class="cities__text">
-            Пора налаживать быт. В Костроме вы купили всё, что забыли взять с
-            собой — растворимый кофе, водку, дошик. Устраивайтесь поудобнее.
-            Мы ещё даже не доехали до Урала.
-          </p>
+        <p class="cities__text">
+          Сначала — привычные пейзажи европейской части России: поля, дачи,
+          деревни, лесополосы, линии электропередач. Абрамцево, Берендеево,
+          Ростов Великий, Нерехта: кажется, что едешь то ли по стране хоббитов,
+          то ли в прошлое, в 1973 год, и сейчас из соседнего купе выйдет
+          высокий нескладный человек в японском кимоно и ярких штанах.
+        </p>
+      </div>
+      <div class="cities__city" id="city-ekb">
+        <div class="cities__video-container cities__video-container_name_ekb">
+          <video src="./videos/2.mp4" poster="/posters/kostroma-ekb.jpg" type="video/mp4" autoplay muted></video>
         </div>
-        <div class="cities__city" id="city-omsk">
-          <div class="cities__video-container cities__video-container_name_omsk">
-            <video src="./videos/3.mp4" poster="/posters/ekb-omsk.jpg" type="video/mp4" autoplay muted></video>
-          </div>
-          <p class="cities__text">
-            Путешествие окончательно перестало быть путешествием и стало
-            трипом. Этот мистический опыт погружения в глубины России вы точно
-            не забудете никогда. Европа осталась позади, но Азия и не думает
-            начинаться. Возможно, вы вообще стояли на месте всё это время. С
-            другой стороны, если долго смотреть в окно (а что ещё
-            делать), можно увидеть армию Колчака, идущую в атаку на красных.
-            Или мамонтов, бродивших здесь когда-то вдоль рельс.
-          </p>
+        <p class="cities__text">
+          Пора налаживать быт. В Костроме вы купили всё, что забыли взять с
+          собой — растворимый кофе, водку, дошик. Устраивайтесь поудобнее.
+          Мы ещё даже не доехали до Урала.
+        </p>
+      </div>
+      <div class="cities__city" id="city-omsk">
+        <div class="cities__video-container cities__video-container_name_omsk">
+          <video src="./videos/3.mp4" poster="/posters/ekb-omsk.jpg" type="video/mp4" autoplay muted></video>
         </div>
-        <div class="cities__city" id="city-yablonovy-pereval">
-          <div class="cities__video-container cities__video-container_name_yablonovy-pereval">
-            <video src="./videos/4.mp4" poster="/posters/pereval.jpg" type="video/mp4" autoplay muted></video>
-          </div>
-          <p class="cities__text">
-            Байкал — позади. Вы в самом сердце континента, здесь нет ни
-            эллина, ни иудея, ни Европы, ни Азии. Поезд проходит самую высокую
-            точку Транссиба, за которой начинается путь к морю. Когда-то
-            дорога сужалась здесь до одной колеи и шла через узкий туннель,
-            на портале которого красовалось хтоническое указание направления:
-            «К великому океану».
-          </p>
+        <p class="cities__text">
+          Путешествие окончательно перестало быть путешествием и стало
+          трипом. Этот мистический опыт погружения в глубины России вы точно
+          не забудете никогда. Европа осталась позади, но Азия и не думает
+          начинаться. Возможно, вы вообще стояли на месте всё это время. С
+          другой стороны, если долго смотреть в окно (а что ещё
+          делать), можно увидеть армию Колчака, идущую в атаку на красных.
+          Или мамонтов, бродивших здесь когда-то вдоль рельс.
+        </p>
+      </div>
+      <div class="cities__city" id="city-yablonovy-pereval">
+        <div class="cities__video-container cities__video-container_name_yablonovy-pereval">
+          <video src="./videos/4.mp4" poster="/posters/pereval.jpg" type="video/mp4" autoplay muted></video>
         </div>
-        <div class="cities__city" id="city-khabarovsk">
-          <div class="cities__video-container cities__video-container_name_khabarovsk">
-            <video src="./videos/5.mp4" poster="/posters/pereval-khb.jpg" type="video/mp4" autoplay muted></video>
-          </div>
-          <p class="cities__text">
-            Хабаровск появляется, когда уже кажется, что остаток жизни вы
-            проведёте в поезде. О соседях по вагону вы уже знаете больше, чем
-            о своих ближайших родственниках. Но ещё каких-то 800
-            километров — и Владивосток.
-          </p>
+        <p class="cities__text">
+          Байкал — позади. Вы в самом сердце континента, здесь нет ни
+          эллина, ни иудея, ни Европы, ни Азии. Поезд проходит самую высокую
+          точку Транссиба, за которой начинается путь к морю. Когда-то
+          дорога сужалась здесь до одной колеи и шла через узкий туннель,
+          на портале которого красовалось хтоническое указание направления:
+          «К великому океану».
+        </p>
+      </div>
+      <div class="cities__city" id="city-khabarovsk">
+        <div class="cities__video-container cities__video-container_name_khabarovsk">
+          <video src="./videos/5.mp4" poster="/posters/pereval-khb.jpg" type="video/mp4" autoplay muted></video>
         </div>
-        <div class="cities__city" id="city-vladivostok">
-          <div class="cities__video-container cities__video-container_name_vladivostok">
-            <div class="cities__video-title">Владивосток</div>
-            <iframe id="ytplayer" type="text/html" width="720" height="405"
-              src="https://www.youtube.com/embed/nj5nuYYrZvg?start=15" frameborder="0" allowfullscreen>
-          </div>
-          <p class="cities__text">
-            Это как путешествие на Зону в «Сталкере» Тарковского.
-            С каждым происходит что-то своё, но, проделав этот путь,
-            никто не остаётся тем же человеком, который выехал из Москвы
-            неделю назад.
-          </p>
+        <p class="cities__text">
+          Хабаровск появляется, когда уже кажется, что остаток жизни вы
+          проведёте в поезде. О соседях по вагону вы уже знаете больше, чем
+          о своих ближайших родственниках. Но ещё каких-то 800
+          километров — и Владивосток.
+        </p>
+      </div>
+      <div class="cities__city" id="city-vladivostok">
+        <div class="cities__video-container cities__video-container_name_vladivostok">
+          <div class="cities__video-title">Владивосток</div>
+          <iframe id="ytplayer" type="text/html" width="920" height="605"
+                  src="https://www.youtube.com/embed/nj5nuYYrZvg?start=15" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p class="cities__text">
+          Это как путешествие на Зону в «Сталкере» Тарковского.
+          С каждым происходит что-то своё, но, проделав этот путь,
+          никто не остаётся тем же человеком, который выехал из Москвы
+          неделю назад.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="iframes">
+    <div class="iframes__container">
+      <div class="iframe iframe__tickets">
+        <div class="iframe__title">Посмотреть расписание ⟶</div>
+        <div class="iframe__item">
+          <iframe
+                  style="-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); overflow: hidden; border: 0; width: 100%; height: 351px;"
+                  src="https://rasp.yandex.ru/informers/v2/search/?fromId=c213&amp;toId=c75&amp;size=5&amp;color=1&amp;type=train">
+            Расписание
+            поездов по Транссибирской магистрали.
+          </iframe>
         </div>
       </div>
-    </section>
-    <section class="iframes">
-      <div class="iframes__container">
-        <div class="iframe iframe__tickets">
-          <div class="iframe__title">Посмотреть расписание ⟶</div>
-          <div class="iframe__item">
-            <iframe
-              style="-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); overflow: hidden; border: 0; width: 100%; height: 351px;"
-              src="https://rasp.yandex.ru/informers/v2/search/?fromId=c213&amp;toId=c75&amp;size=5&amp;color=1&amp;type=train">Расписание
-              поездов по Транссибирской магистрали.</iframe>
-          </div>
-        </div>
-        <div class="iframe iframe__music">
-          <div class="iframe__title">Что послушать ⟶</div>
-          <div class="iframe__item">
-            <iframe style="width:100%;height:450px;" width="100%" height="450"
-              src="https://music.yandex.ru/iframe/#playlist/ya.playlist/1250">Слушайте <a
-                href='https://music.yandex.ru/users/ya.playlist/playlists/1250'>Здравствуйте, ваш браузер не может
-                показать классную штуку, потому что не поддерживает iframe.</iframe>
-          </div>
-        </div>
-        <div class="iframe iframe__books">
-          <div class="iframe__title">Что почитать ⟶</div>
-          <div class="iframe__item">
-            <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="100%" height="866"
-              allowfullscreen style="max-width:100%"
-              src="https://read.amazon.com/kp/card?asin=B07BPGCS41&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_AJJ78ZD3N489RKCX137Y">Книга
-              для чтения в пути.</iframe>
-          </div>
-        </div>
-        <div class="iframe iframe__map">
-          <div class="iframe__title">Карта пути ⟶</div>
-          <div class="iframe__item">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A3ef045b5f09c9c539ea349c9f8ed6cfbb3791a246658cfd56473c1b13db0e500&amp;source=constructor"
-              width="100%" height="338">Здравствуйте, ваш браузер не может показать классную штуку,
-              потому что не
-              поддерживает iframe.</iframe>
-          </div>
-        </div>
-        <div class="iframe iframe__social">
-          <div class="iframe__title">Мой отчёт ⟶</div>
-          <div class="iframe__item">
-            <iframe
-              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FVillagemsk%2Fphotos%2Fa.112459975446493%2F3867334873292299%2F%3Ftype%3D3&width=100%25&show_text=true&height=358&appId"
-              width="100%" height="358" style="border:none;overflow:hidden" scrolling="no" allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">Публикация в Facebook о
-              поездке по Транссибирской магистрали.</iframe>
-          </div>
+      <div class="iframe iframe__music">
+        <div class="iframe__title">Что послушать ⟶</div>
+        <div class="iframe__item">
+          <iframe style="width:100%;height:450px;" width="100%" height="450"
+                  src="https://music.yandex.ru/iframe/#playlist/ya.playlist/1250">Слушайте <a
+                  href='https://music.yandex.ru/users/ya.playlist/playlists/1250'>Здравствуйте, ваш браузер не может
+            показать классную штуку, потому что не поддерживает iframe.</iframe>
         </div>
       </div>
-    </section>
-  </div>
-  <script src="./script/script.js"></script>
+      <div class="iframe iframe__books">
+        <div class="iframe__title">Что почитать ⟶</div>
+        <div class="iframe__item">
+          <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="100%" height="866"
+                  allowfullscreen style="max-width:100%"
+                  src="https://read.amazon.com/kp/card?asin=B07BPGCS41&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_AJJ78ZD3N489RKCX137Y">
+            Книга
+            для чтения в пути.
+          </iframe>
+        </div>
+      </div>
+      <div class="iframe iframe__map">
+        <div class="iframe__title">Карта пути ⟶</div>
+        <div class="iframe__item">
+          <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A3ef045b5f09c9c539ea349c9f8ed6cfbb3791a246658cfd56473c1b13db0e500&amp;source=constructor"
+                  width="100%" height="338">Здравствуйте, ваш браузер не может показать классную штуку,
+            потому что не
+            поддерживает iframe.
+          </iframe>
+        </div>
+      </div>
+      <div class="iframe iframe__social">
+        <div class="iframe__title">Мой отчёт ⟶</div>
+        <div class="iframe__item">
+          <iframe
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FVillagemsk%2Fphotos%2Fa.112459975446493%2F3867334873292299%2F%3Ftype%3D3&width=100%25&show_text=true&height=358&appId"
+                  width="100%" height="358" style="border:none;overflow:hidden" scrolling="no" allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">Публикация в
+            Facebook о
+            поездке по Транссибирской магистрали.
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="./script/script.js"></script>
 </body>
 
 </html>
